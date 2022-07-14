@@ -2,7 +2,7 @@
 header,
 header span {
   display: flex;
-  height: 20vh;
+  height: 15vh;
   font-size: 70px;
   align-items: center;
   padding-left: 5vw;
@@ -16,11 +16,16 @@ h1 {
 
 /*---------------main-----------------------*/
 section {
+  height: 65vh;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* border: solid black 1px; */
+}
+.wrapper {
+  display: flex;
   /* border: solid black 1px; */
 }
 .resultCounter {
@@ -40,6 +45,9 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* border: solid 1px black; */
+  padding: 50px;
+  box-sizing: border-box;
 }
 .moins {
   font-size: 100px;
@@ -61,4 +69,13 @@ button {
   border-radius: 5px;
   border: none;
   color: white;
+}
+
+footer,
+footer span {
+  font-size: 20px;
+}
+footer {
+  margin-top: 40px;
+  text-align: center;
 }

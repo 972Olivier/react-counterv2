@@ -1,25 +1,22 @@
-import { useState } from "react";
-
-const NewCounter = () => {
-  const [counter, setCounter] = useState(0);
+const NewCounter = ({ setCounter, more, less, reset, result }) => {
   return (
     <div>
       <div className="resultCounter">
         <div className="box">
           <span
             onClick={() => {
-              setCounter(counter - 1);
+              setCounter(less);
             }}
             className="moins"
           >
             -
           </span>
           <div className="result">
-            <span>{counter}</span>
+            <span>{result}</span>
           </div>
           <span
             onClick={() => {
-              setCounter(counter + 1);
+              setCounter(more);
             }}
           >
             +
@@ -28,7 +25,7 @@ const NewCounter = () => {
         <div>
           <button
             onClick={() => {
-              setCounter(0);
+              setCounter(reset);
             }}
             className="reset"
           >
